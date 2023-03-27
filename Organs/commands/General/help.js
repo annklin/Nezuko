@@ -82,17 +82,8 @@ module.exports = {
       }
       txt += `📗 Type *${prefix}help* <Command-Name> or <Command-Name> --info\n\n`;
       txt += `*©Eternity-Team*`
-      let urlll = [
-      "https://static.moewalls.com/videos/preview/2022/neko-nezuko-kimetsu-no-yaiba-preview.mp4",
-      "https://static.moewalls.com/videos/preview/2022/nezuko-lying-on-the-water-kimetsu-no-yaiba-preview.mp4",
-      "https://static.moewalls.com/videos/preview/2022/nezuko-kamado-demon-slayer-preview.mp4",
-      "https://upcdn.io/FW25b6N/raw/y2mate.com%20-%20%20Kamado%20Nezuko%20%20%20Kimetsu%20no%20Yaiba%20%20%20Wallpaper%20Live%204K%20%20%20Wallpaper%20Engine%20%20%20Demon%20slayer%20_360p%20(1).mp4",
-    ];
-    let rae = urlll[Math.floor(Math.random() * urlll.length)];
-      await client.sendMessage(
-      m.from,
-      { video: { url: rae }, gifPlayback: true, caption: txt, mentions: owner },
-      { quoted: m });
+      const eternitylogo = 'https://cdn.discordapp.com/attachments/1030916817285296231/1033792220370833509/y2mate.com_-_Nezuko_Edit_floating_480p.mp4'
+    client.sendMessage(m.from,{video:{url:eternitylogo}, gifPlayback:true, caption:txt},{quoted:m})
     }
   },
 };
