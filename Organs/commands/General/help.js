@@ -82,24 +82,17 @@ module.exports = {
       }
       txt += `📗 Type *${prefix}help* <Command-Name> or <Command-Name> --info\n\n`;
       txt += `*©Eternity-Team*`
-      const eternity = [
-        "https://images3.alphacoders.com/107/1078895.png",
-        "https://images6.alphacoders.com/103/1037400.png",
-        "https://images6.alphacoders.com/102/1020806.jpg",
-        "https://images7.alphacoders.com/104/1040192.jpg",
-        "https://images5.alphacoders.com/104/1045349.jpg",
-        "https://images6.alphacoders.com/102/1024472.png",
-        "https://images8.alphacoders.com/120/1206401.jpg",
-        "https://images8.alphacoders.com/122/1222661.png",
-        "https://images3.alphacoders.com/120/1207252.jpg",
-        "https://images2.alphacoders.com/125/1258571.jpg",
-        "https://images7.alphacoders.com/125/1258568.jpg",
-        "https://images2.alphacoders.com/125/1258571.jpg",
-        "https://images2.alphacoders.com/125/1254189.jpg",
-      ];
-      const eternitylogo =
-        eternity[Math.floor(Math.random() * eternity.length)];
-      client.sendMessage(m.from, {image:{url:eternitylogo}, caption:txt}, { quoted: m });
+      let urlll = [
+      "https://static.moewalls.com/videos/preview/2022/neko-nezuko-kimetsu-no-yaiba-preview.mp4",
+      "https://static.moewalls.com/videos/preview/2022/nezuko-lying-on-the-water-kimetsu-no-yaiba-preview.mp4",
+      "https://static.moewalls.com/videos/preview/2022/nezuko-kamado-demon-slayer-preview.mp4",
+      "https://upcdn.io/FW25b6N/raw/y2mate.com%20-%20%20Kamado%20Nezuko%20%20%20Kimetsu%20no%20Yaiba%20%20%20Wallpaper%20Live%204K%20%20%20Wallpaper%20Engine%20%20%20Demon%20slayer%20_360p%20(1).mp4",
+    ];
+    let rae = urlll[Math.floor(Math.random() * urlll.length)];
+      await client.sendMessage(
+      m.from,
+      { video: { url: rae }, gifPlayback: true, caption: mo, mentions: owner },
+      { quoted: m });
     }
   },
 };
