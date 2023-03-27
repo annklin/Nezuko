@@ -91,7 +91,7 @@ module.exports = {
     let rae = urlll[Math.floor(Math.random() * urlll.length)];
       await client.sendMessage(
       m.from,
-      { video: { url: rae }, gifPlayback: true, caption: mo, mentions: owner },
+      { video: { url: rae }, gifPlayback: true, caption: txt, mentions: owner },
       { quoted: m });
     }
   },
